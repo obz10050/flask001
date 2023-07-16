@@ -10,7 +10,7 @@ def home():
 
 @app.route("/profile/<string:user>")
 def profile(user):
-    return "hello" + user
+    return ('hello {}'.format(user))
 
 if __name__== "__main__":
      app.run(host="0.0.0.0", port=3000)
